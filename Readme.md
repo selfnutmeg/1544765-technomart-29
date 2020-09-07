@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Степан Горев](https://up.htmlacademy.ru/htmlcss/29/user/1544765).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
