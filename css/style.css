@@ -3,6 +3,7 @@
     --basic-blue: #32425C;
     --white: #FFFFFF;
     --pink-red: #EE3643;
+    --light-pink-red: #FF5357;
     --black: #000000;
     --orange: #FFBF47;
     --blue: #3BBCE3;
@@ -22,6 +23,7 @@
     --basic-gray: #A9A9A9;
     --darken-gray: #F3F7F9;
     --blue-darker: #212A3A;
+    --blue-gray: #3D546F;
 
     --green: #63A63E;
     --light-green: #5FBB2D;
@@ -37,6 +39,7 @@
     --basic-graylight: #C5C5C5;
     --dark-pink-red: #CA2C37;
     --shadow-alpha-gray: rgba(0, 0, 0, 0.15);
+    --light-grey: #C1C6CE;
 }
 
 body {
@@ -108,8 +111,30 @@ img {
     box-shadow: inset 0px -5px 0px var(--alpha-black-light);
 }
 
+.logo-text {
+    fill: var(--white);
+}
+
 .logo-container:active {
     background-color: var(--dark-red);
+}
+
+.icon-search,
+.icon-bookmark,
+.icon-cart {
+    fill: var(--white);
+    opacity: 0.3;
+}
+
+.search-container:hover .icon-search,
+.markers:hover .icon-bookmark,
+.basket:hover .icon-cart {
+    opacity: 1;
+}
+
+.markers:active .icon-bookmark,
+.basket:active .icon-cart {
+    opacity: 0.3;
 }
 
 .markers,
@@ -125,6 +150,10 @@ img {
     color: var(--alpha-white);
 }
 
+/*.not-empty {
+    background-color: var(--pink-red);
+}  -  Для classList.add  */
+
 .order {
     color: var(--white);
     background-color: var(--green);
@@ -138,6 +167,10 @@ img {
 
 .order:active {
     color: var(--alpha-white);
+}
+
+.icon-phone {
+    fill: #B7BFC8;
 }
 
 .header-tel {
@@ -162,11 +195,30 @@ img {
 
 .checkin,
 .login,
-.profile {
+.profile,
+.logout {
     color: var(--black);
     background-color: var(--white);
     font-size: 21px;
     line-height: 21px;
+}
+
+.icon-login,
+.icon-logout,
+.icon-user {
+    fill: var(--basic-graylight);
+}
+
+.login:hover .icon-login,
+.profile:hover .icon-user,
+.logout:hover .icon-logout {
+    fill: var(--blue-gray);
+}
+
+.login:active .icon-login,
+.profile:active .icon-user,
+.logout:active .icon-logout {
+    fill: var(--basic-graylight);
 }
 
 .checkin:hover,
@@ -263,18 +315,36 @@ img {
     background-color: var(--light-orange);
 }
 
+.icon-1,
+.icon-2,
+.icon-3,
+.icon-4,
+.icon-5 {
+    fill: var(--white);
+}
+
 
 /*=======Slider=======*/
 
 
 .slider-page-1 {
+    width: 620px;
+    height: 266px;
     background-color: var(--black);
-    /*background-image: url("");*/
+    background-image: url(../img/slider-bg-perf.jpg);
 }
 
 .slider-page-2 {
+    width: 620px;
+    height: 266px;
     background-color: var(--black);
-    /*background-image: url("");*/
+    background-image: url(../img/slider-bg-drill.jpg);
+}
+
+.slider-header {
+    width: 620px;
+    height: 104px;
+    background-color: var(--alpha-black);
 }
 
 .slider-name {
@@ -288,6 +358,22 @@ img {
 .slider-subname {
     color: var(--white);
     font-size: 18px;
+}
+
+.slider-left-button,
+.slider-right-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-left {
+    fill: var(--white);
+}
+
+.icon-left-rotated {
+    fill: var(--white);
+    transform: rotate(-180deg);
 }
 
 .button {
@@ -456,13 +542,31 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
-    background-color: var(--pink-red);
+    background-color: var(--light-pink-red);
     border-radius: 2px;
 }
 
 .transport {
     font-size: 18px;
     color: var(--black);
+}
+
+.radio-delivery-icon {
+    width: 468px;
+    height: 261px;
+    background-image: url(../img/lorrypng.png);
+}
+
+.radio-guarantee-icon {
+    width: 389px;
+    height: 283px;
+    background-image: url(../img/medal.png);
+}
+
+.radio-credit-icon {
+    width: 465px;
+    height: 285px;
+    background-image: url(../img/credit.png);
 }
 
 
@@ -478,6 +582,10 @@ img {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+}
+
+.icon-home {
+    fill: var(--light-grey);
 }
 
 .filters-container {
@@ -577,6 +685,12 @@ img {
     background-color: var(--basic-blue);
 }
 
+.footer-logo-container {
+    width: 220px;
+    height: 68px;
+    background-image: url(../img/logotype.png)
+}
+
 .footer-address,
 .footer-tel {
     color: var(--sky-gray);
@@ -632,6 +746,7 @@ img {
     vertical-align: top;
     width: 44px;
     height: 44px;
+    text-align: center;
     border-radius: 50%;
     background: linear-gradient(0deg, var(--blue-darker), var(--blue-darker));
 }
@@ -640,3 +755,10 @@ img {
 .social-media-icon:active {
     background: var(--pink-red);
 }
+
+.icon-vk,
+.icon-fb,
+.icon-ig {
+    fill: var(--white);
+}
+
