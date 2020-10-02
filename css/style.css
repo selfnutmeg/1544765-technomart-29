@@ -47,6 +47,8 @@
 }
 .page-body,
 .catalog-page-body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     min-width: 960px;
     min-height: 100%;
     margin: 0;
@@ -71,10 +73,13 @@
 
 .visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .nav-list,
@@ -107,6 +112,7 @@
 }
 
 .header {
+    grid-row: 1 / 2;
     background-color: var(--sky-gray);
     padding-bottom: 60px;
 }
@@ -652,7 +658,6 @@
 .old-price {
     height: 18px;
     font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
@@ -672,7 +677,6 @@
     vertical-align: middle;
     height: 38px;
     font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 38px;
@@ -826,7 +830,6 @@
 
 .block-caption {
     margin: 0;
-    font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
@@ -836,7 +839,6 @@
 
 .text {
     font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
@@ -867,7 +869,6 @@
 }
 
 .subcaption {
-    font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
@@ -966,7 +967,6 @@
 .selection-caption {
     color: var(--black);
     font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 38px;
@@ -1024,7 +1024,6 @@
     height: 38px;
     color: var(--black);
     font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -1041,7 +1040,6 @@
     height: 38px;
     color: var(--white);
     font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -1056,7 +1054,6 @@
     height: 38px;
     color: var(--black);
     font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -1068,7 +1065,6 @@
 
 .filter-option {
     font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 17px;
     line-height: 30px;
@@ -1082,7 +1078,6 @@
     height: 38px;
     color: var(--black);
     font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -1106,6 +1101,7 @@
 /*=======Footer=======*/
 
 .footer {
+    grid-row: 3 / 4;
     height: 300px;
 }
 
