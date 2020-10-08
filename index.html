@@ -23,7 +23,9 @@
                 <svg class="icon-search" width="17" height="17" fill="none" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
                 </svg>
-                <!--Здесь будет форма-->
+                <form class="search-form" action="#" method="POST">
+                    <input class="search-form-input" type="search" placeholder="Поиск:">
+                </form>
             </div>
             <a href="#" class="markers">
                 <svg class="icon-bookmark" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,9 +52,7 @@
                 <svg class="icon-phone" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.572 18.985H14.631C10.502 18.497 7.474 16.577 5.272 14.121C3.062 11.66 1.318 8.49202 0.977997 4.22802V3.08402C1.056 2.31002 1.437 1.78002 1.876 1.32702C2.425 0.76602 3.25 0.0440198 4.002 0.0190198C4.556 0.00101977 5.502 0.39902 5.881 0.91802C6.21 1.36402 6.385 2.25702 6.537 2.92102C6.691 3.59202 7.042 4.56402 6.945 5.21002C6.797 6.21702 5.458 6.64402 5.066 7.37602C6.373 10.511 8.509 12.815 11.359 14.407C12.074 14.015 12.705 12.835 13.691 12.812C14.05 12.803 14.509 12.99 14.875 13.098C15.277 13.219 15.625 13.373 15.979 13.506C16.575 13.73 17.627 14.027 17.983 14.527C18.348 15.04 18.553 15.883 18.473 16.406C18.309 17.447 16.594 18.603 15.572 18.985Z"/>
                 </svg>
-                <span class="phone-wrapper">
-                    +7 (812) 555-05-55
-                </span>
+                +7 (812) 555-05-55
             </a>
             <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
@@ -96,6 +96,9 @@
                         <path d="M37.91 30.44V41.3s.1 2.73-2.82 2.73c-3.07 0-3.13-2.73-3.13-2.73v-6.42c0-.24-.34-1.9-2.32-1.9-2.62 0-2.67 1.87-2.67 1.87v19.22s.03 1.86-2.46 1.86C22 55.94 22 53.96 22 53.96V40.02s0-2.95-3.8-2.95c-4.06 0-3.97 3.13-3.97 3.13v3.72s-.12 2.95-4.69 2.95-4.63-4.51-4.63-4.51V29.94C3.17 28.98 0 26.67 0 26.67V56s2.99 9 22 9c19.01 0 22-8.7 22-8.7V26.68c-2.94 2.83-6.09 3.77-6.09 3.77z"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0C1.69 0 0 19.88 0 19.88v3.06C8.44 29.19 22 29 22 29s13.56.19 22-6.06v-3.06S42.31 0 22 0zm0 25c-11.75 0-14.31-2.38-14.31-2.38C13.94 19.75 22 19.88 22 19.88s8.06-.12 14.31 2.75c0 0-2.56 2.38-14.31 2.38zM4.31 15.56s8.13-2.94 17.69-2.94 17.69 2.94 17.69 2.94C35.13 2.62 22 3.06 22 3.06S8.87 2.62 4.31 15.56z"/>
                     </svg>
+                </div>
+                <div class="new-item-label">
+                    <p class="new-item-label-text">New</p>
                 </div>
             </li>
             <li class="module-icon tools-icon">
@@ -149,48 +152,36 @@
                 </div>
             </li>
             <li class="slider">
-                <div class="slider-page-1">
+                <div class="slider-page slider-page-1 current-slide">
                     <div class="slider-header">
                         <h3 class="slider-name">Перфораторы</h3>
                         <p class="slider-subname">Настоящие мужские игрушки</p>
                     </div>
-                    <div class="slide-change">
-                        <button type="button" class="slider-left-button">
-                            <svg class="icon-left" width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"/>
-                            </svg>
-                        </button>
-                        <button type="button" class="slider-right-button">
-                            <svg class="icon-left-rotated" width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"/>
-                            </svg>
-                        </button>
-                    </div>
                     <a href="catalog.html" class="button slider-button">Открыть каталог</a>
                 </div>
-
-                <div class="slider-page-2 slide-hidden">
+                <div class="slider-page slider-page-2">
                     <div class="slider-header">
                         <h3 class="slider-name">Дрели</h3>
                         <p class="slider-subname">Соседям на радость!</p>
                     </div>
-                    <div class="slide-change">
-                        <button type="button" class="slider-left-button">
-                            <svg class="icon-left" width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"/>
-                            </svg>
-                        </button>
-                        <button type="button" class="slider-right-button">
-                            <svg class="icon-left-rotated" width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"/>
-                            </svg>
-                        </button>
-                    </div>
                     <a href="#" class="button slider-button">Открыть каталог</a>
+                </div>
+                <button type="button" class="slider-left-button">
+                    <svg class="icon-left" width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"/>
+                    </svg>
+                </button>
+                <button type="button" class="slider-right-button">
+                    <svg class="icon-left-rotated" width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"/>
+                    </svg>
+                </button>
+                <div class="slider-pagination">
+                    <button type="button" class="slider-dot current-dot" aria-label="Слайд 1"></button>
+                    <button type="button" class="slider-dot" aria-label="Слайд 2"></button>
                 </div>
             </li>
         </ul>
-
 
         <section class="popular-goods">
             <div class="section-headline">
@@ -202,7 +193,7 @@
                     <article class="good-card">
                         <div class="card-image-block">
                             <img src="img/bosch9000.png" class="card-image" width="184" height="164" alt="">
-                            <div class="good-actions card-item-hidden">
+                            <div class="good-actions">
                                 <button type="button" class="card-button">
                                     <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -226,7 +217,7 @@
                     <article class="good-card">
                         <div class="card-image-block">
                             <img src="img/bosch3000.png" class="card-image" width="127" height="112" alt="">
-                            <div class="good-actions card-item-hidden">
+                            <div class="good-actions">
                                 <button type="button" class="card-button">
                                     <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -243,6 +234,9 @@
                             <p class="old-price">22500 Р.</p>
                             <a href="#" class="current-price">15500 Р.</a>
                         </div>
+                        <div class="new-item-label">
+                            <p class="new-item-label-text">New</p>
+                        </div>
                     </article>
                 </li>
 
@@ -250,7 +244,7 @@
                     <article class="good-card">
                         <div class="card-image-block">
                             <img src="img/bosch6000.png" class="card-image" width="144" height="128" alt="">
-                            <div class="good-actions card-item-hidden">
+                            <div class="good-actions">
                                 <button type="button" class="card-button">
                                     <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -274,7 +268,7 @@
                     <article class="good-card">
                         <div class="card-image-block">
                             <img src="img/bosch2000.png" class="card-image" width="127" height="112" alt="">
-                            <div class="good-actions card-item-hidden">
+                            <div class="good-actions">
                                 <button type="button" class="card-button">
                                     <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -290,6 +284,9 @@
                             <h3 class="good-name">Перфоратор BOSCH<br>BFG 2000</h3>
                             <p class="old-price old-price-hidden">22500 Р.</p>
                             <a href="#" class="current-price">12500 Р.</a>
+                        </div>
+                        <div class="new-item-label">
+                            <p class="new-item-label-text">New</p>
                         </div>
                     </article>
                 </li>
@@ -352,31 +349,28 @@
                 <h2 class="block-caption">Сервисы</h2>
                 <p class="text options-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             </div>
-            <div class="radio-boxes">
-                 <div class="container">
-                      <input type="radio" name="group1" id="radio-1">
-                      <label for="radio-1"><span class="radio">Доставка</span></label>
-                 </div>
-                 <div class="container">
-                      <input type="radio" name="group1" id="radio-2">
-                      <label for="radio-2"><span class="radio">Гарантия</span></label>
-                 </div>
-                 <div class="container">
-                      <input type="radio" name="group1" id="radio-3">
-                      <label for="radio-3"><span class="radio">Кредит</span></label>
-                 </div>
-            </div>
-            <div class="option-slide-1">
+            <ul class="options-list">
+                <li class="options-item">
+                    <button class="options-button current-options-button" type="button">Доставка</button>
+                </li>
+                <li class="options-item">
+                    <button class="options-button" type="button">Гарантия</button>
+                </li>
+                <li class="options-item">
+                    <button class="options-button" type="button">Кредит</button>
+                </li>
+            </ul>
+            <div class="option-slide-1 option-slide current-option-slide">
                 <h3 class="subcaption">Доставка</h3>
                 <p class="text option-slide-text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
                 <div class="radio-delivery-icon"></div>
             </div>
-            <div class="option-slide-2 option-slide-hidden">
+            <div class="option-slide-2 option-slide">
                 <h3 class="subcaption">Гарантия</h3>
                 <p class="text option-slide-text">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его<br>возгоранием,  вы всегда можете быть уверены в нашей<br>гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
                 <div class="radio-guarantee-icon"></div>
             </div>
-            <div class="option-slide-3 option-slide-hidden">
+            <div class="option-slide-3 option-slide">
                 <h3 class="subcaption">Кредит</h3>
                 <p class="text option-slide-text">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
                 <a href="#" class="request">Отправить заявку</a>
@@ -399,9 +393,9 @@
             <div class="contact-column">
                 <h2 class="block-caption">Контакты</h2>
                 <p class="text info-text">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-                <div class="map-container">
-                    <img src="img/mini-map.jpg" width="300" height="158" alt="Карта">
-                </div>
+                <a class="map-container-link" href="">
+                    <img src="img/mini-map.jpg" width="300" height="158" class="map-image" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+                </a>
                 <button type="button" class="button help-button">Заблудились? Напишите нам!</button>
             </div>
         </div>
