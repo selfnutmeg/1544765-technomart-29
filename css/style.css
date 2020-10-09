@@ -516,6 +516,7 @@
     line-height: 38px;
     background-color: var(--less-alpha-white);
     color: var(--white);
+    text-transform: uppercase;
 }
 
 .icon-link:hover {
@@ -785,6 +786,10 @@
 
 .good-card:hover .good-actions {
     display: block;
+}
+
+.good-card:hover {
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
 .card-image-block {
