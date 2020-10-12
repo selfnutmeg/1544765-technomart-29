@@ -23,7 +23,9 @@
                 <svg class="icon-search" width="17" height="17" fill="none" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
                 </svg>
-                <!--Здесь будет форма-->
+                <form class="search-form" action="#" method="POST">
+                    <input class="search-form-input" type="search" placeholder="Поиск:">
+                </form>
             </div>
             <a href="#" class="markers">
                 <svg class="icon-bookmark" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,17 +97,17 @@
 <main class="catalog-main">
     <div class="centered">
         <ul class="breadcrumbs">
-            <li>
-                <a href="index.html" class="breadcrumb">
+            <li class="breadcrumb">
+                <a href="index.html">
                     <svg class="icon-home" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z"/>
                         <path d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z"/>
                     </svg>
                 </a>
             </li>
-            <li><a href="#" class="breadcrumb">Каталог</a></li>
-            <li><a href="#" class="breadcrumb">Инструмент</a></li>
-            <li><a href="#" class="breadcrumb">Перфораторы</a></li>
+            <li class="breadcrumb"><a href="#">Каталог</a></li>
+            <li class="breadcrumb"><a href="#">Инструмент</a></li>
+            <li class="breadcrumb"><a href="#">Перфораторы</a></li>
         </ul>
         <div class="section-headline">
             <h2 class="caption">Перфораторы</h2>
@@ -113,7 +115,36 @@
 
         <section class="goods-section">
             <div class="filters-container sort-wrapper">
-                <p class="selection-caption">Сортировка:</p>
+                <p class="selection-caption sort-caption">Сортировка:</p>
+                <ul class="sort-controls">
+                    <li class="sort-control-wrapper">
+                        <a class="sort-control sort-control-price" href="">По цене</a>
+                    </li>
+                    <li class="sort-control-wrapper">
+                        <a class="sort-control sort-control-not-current sort-control-type" href="">По типу</a>
+                    </li>
+                    <li class="sort-control-wrapper">
+                        <a class="sort-control sort-control-not-current sort-control-functional" href="">По функционалу</a>
+                    </li>
+                </ul>
+                <ul class="sort-methods">
+                    <li class="sort-method-wrapper">
+                        <a class="sort-method sort-method-growing" href="">
+                            <span class="visually-hidden">По возрастанию</span>
+                            <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.66 0l5.5 10h-11"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sort-method-wrapper">
+                        <a class="sort-method sort-method-not-current sort-method-decreasing" href="">
+                            <span class="visually-hidden">По убыванию</span>
+                            <svg class="icon-arrow" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.66 10L.16 0h11"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="goods-wrapper">
                 <h2 class="visually-hidden">Список товаров</h2>
@@ -122,7 +153,7 @@
                         <article class="good-card">
                             <div class="card-image-block">
                                 <img src="img/bosch6000.png" class="card-image" width="144" height="128" alt="">
-                                <div class="good-actions card-item-hidden">
+                                <div class="good-actions">
                                     <button type="button" class="card-button">
                                         <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -145,7 +176,7 @@
                         <article class="good-card">
                             <div class="card-image-block">
                                 <img src="img/bosch6000.png" class="card-image" width="144" height="128" alt="">
-                                <div class="good-actions card-item-hidden">
+                                <div class="good-actions">
                                     <button type="button" class="card-button">
                                         <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -168,7 +199,7 @@
                         <article class="good-card">
                             <div class="card-image-block">
                                 <img src="img/bosch6000.png" class="card-image" width="144" height="128" alt="">
-                                <div class="good-actions card-item-hidden">
+                                <div class="good-actions">
                                     <button type="button" class="card-button">
                                         <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -184,6 +215,9 @@
                                 <h3 class="good-name">Перфоратор BOSCH<br>BFG 6000</h3>
                                 <p class="old-price">30500 Р.</p>
                                 <a href="#" class="current-price">25500 Р.</a>
+                            </div>
+                            <div class="new-item-label">
+                                <p class="new-item-label-text">New</p>
                             </div>
                         </article>
                     </li>
@@ -191,7 +225,7 @@
                         <article class="good-card">
                             <div class="card-image-block">
                                 <img src="img/bosch3000.png" class="card-image" width="127" height="112" alt="">
-                                <div class="good-actions card-item-hidden">
+                                <div class="good-actions">
                                     <button type="button" class="card-button">
                                         <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -208,13 +242,16 @@
                                 <p class="old-price">22500 Р.</p>
                                 <a href="#" class="current-price">15500 Р.</a>
                             </div>
+                            <div class="new-item-label">
+                                <p class="new-item-label-text">New</p>
+                            </div>
                         </article>
                     </li>
                     <li>
                         <article class="good-card">
                             <div class="card-image-block">
                                 <img src="img/bosch6000.png" class="card-image" width="144" height="128" alt="">
-                                <div class="good-actions card-item-hidden">
+                                <div class="good-actions">
                                     <button type="button" class="card-button">
                                         <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -237,7 +274,7 @@
                         <article class="good-card">
                             <div class="card-image-block">
                                 <img src="img/bosch2000.png" class="card-image" width="127" height="112" alt="">
-                                <div class="good-actions card-item-hidden">
+                                <div class="good-actions">
                                     <button type="button" class="card-button">
                                         <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -253,6 +290,9 @@
                                 <h3 class="good-name">Перфоратор BOSCH<br>BFG 2000</h3>
                                 <p class="old-price old-price-hidden">22500 Р.</p>
                                 <a href="#" class="current-price">12500 Р.</a>
+                            </div>
+                            <div class="new-item-label">
+                                <p class="new-item-label-text">New</p>
                             </div>
                         </article>
                     </li>
@@ -261,7 +301,7 @@
                         <article class="good-card">
                             <div class="card-image-block">
                                 <img src="img/bosch3000.png" class="card-image" width="127" height="112" alt="">
-                                <div class="good-actions card-item-hidden">
+                                <div class="good-actions">
                                     <button type="button" class="card-button">
                                         <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -278,13 +318,16 @@
                                 <p class="old-price">22500 Р.</p>
                                 <a href="#" class="current-price">15500 Р.</a>
                             </div>
+                            <div class="new-item-label">
+                                <p class="new-item-label-text">New</p>
+                            </div>
                         </article>
                     </li>
                     <li>
                         <article class="good-card">
                             <div class="card-image-block">
                                 <img src="img/bosch6000.png" class="card-image" width="144" height="128" alt="">
-                                <div class="good-actions card-item-hidden">
+                                <div class="good-actions">
                                     <button type="button" class="card-button">
                                         <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -307,7 +350,7 @@
                         <article class="good-card">
                             <div class="card-image-block">
                                 <img src="img/bosch2000.png" class="card-image" width="127" height="112" alt="">
-                                <div class="good-actions card-item-hidden">
+                                <div class="good-actions">
                                     <button type="button" class="card-button">
                                         <svg class="icon-cart" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
@@ -323,6 +366,9 @@
                                 <h3 class="good-name">Перфоратор BOSCH<br>BFG 2000</h3>
                                 <p class="old-price old-price-hidden">22500 Р.</p>
                                 <a href="#" class="current-price">12500 Р.</a>
+                            </div>
+                            <div class="new-item-label">
+                                <p class="new-item-label-text">New</p>
                             </div>
                         </article>
                     </li>
@@ -332,10 +378,127 @@
                 <div class="filters-container">
                     <p class="selection-caption">Фильтр:</p>
                 </div>
-                <p class="filter-option">Цена:</p>
-                <p class="filter-option">Производители:</p>
-                <p class="filter-option">Питание:</p>
-                <button type="button" class="filters-button">Показать</button>
+
+                <form method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset class="filter-item">
+                        <legend>Цена:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar" style="
+                                    width: 30%;
+                                    margin-left: 20%
+                                    "></div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0" style="
+                                left: 20%
+                                "></div>
+                                <div class="toggle toggle-max" tabindex="0" style="
+                                left: 50%
+                                "></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">
+                                    <input type="number" name="min-price" value="0">
+                                </label>
+                                <label class="max-price">
+                                    <input type="number" name="max-price" value="15000">
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="filter-item">
+                        <legend>Производители:</legend>
+
+                        <ul>
+                            <li class="filter-option filter-checkbox">
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
+                                <label for="filter-bosch" class="label">
+                                    <svg class="checkbox-off checkbox-hidden" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h17a3 3 0 013 3v17a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.54-.46-1-1-1H3c-.54 0-1 .46-1 1v17c0 .54.46 1 1 1h17c.54 0 1-.46 1-1V3z"/>
+                                    </svg>
+                                    <svg class="checkbox-on" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.28499 7.48598L4.45599 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.28499 7.48598Z"/>
+                                        <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"/>
+                                    </svg>
+                                    BOSCH
+                                </label>
+                            </li>
+                            <li class="filter-option filter-checkbox">
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interskol" id="filter-interskol">
+                                <label for="filter-interskol" class="label">
+                                    <svg class="checkbox-off" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h17a3 3 0 013 3v17a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.54-.46-1-1-1H3c-.54 0-1 .46-1 1v17c0 .54.46 1 1 1h17c.54 0 1-.46 1-1V3z"/>
+                                    </svg>
+                                    <svg class="checkbox-on checkbox-hidden" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.28499 7.48598L4.45599 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.28499 7.48598Z"/>
+                                        <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"/>
+                                    </svg>
+                                    ИНТЕРСКОЛ
+                                </label>
+                            </li>
+                            <li class="filter-option filter-checkbox">
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
+                                <label for="filter-makita" class="label">
+                                    <svg class="checkbox-off checkbox-hidden" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h17a3 3 0 013 3v17a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.54-.46-1-1-1H3c-.54 0-1 .46-1 1v17c0 .54.46 1 1 1h17c.54 0 1-.46 1-1V3z"/>
+                                    </svg>
+                                    <svg class="checkbox-on" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.28499 7.48598L4.45599 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.28499 7.48598Z"/>
+                                        <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"/>
+                                    </svg>
+                                    MAKIta
+                                </label>
+                            </li>
+                            <li class="filter-option filter-checkbox">
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
+                                <label for="filter-dewalt" class="label">
+                                    <svg class="checkbox-off" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h17a3 3 0 013 3v17a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.54-.46-1-1-1H3c-.54 0-1 .46-1 1v17c0 .54.46 1 1 1h17c.54 0 1-.46 1-1V3z"/>
+                                    </svg>
+                                    <svg class="checkbox-on checkbox-hidden" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.28499 7.48598L4.45599 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.28499 7.48598Z"/>
+                                        <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"/>
+                                    </svg>
+                                    Dewalt
+                                </label>
+                            </li>
+                            <li class="filter-option filter-checkbox">
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                                <label for"filter-hitachi" class="label">
+                                    <svg class="checkbox-off" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h17a3 3 0 013 3v17a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm18 3c0-.54-.46-1-1-1H3c-.54 0-1 .46-1 1v17c0 .54.46 1 1 1h17c.54 0 1-.46 1-1V3z"/>
+                                    </svg>
+                                    <svg class="checkbox-on checkbox-hidden" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.28499 7.48598L4.45599 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.28499 7.48598Z"/>
+                                        <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"/>
+                                    </svg>
+                                    Hitachi
+                                </label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <fieldset class="filter-item">
+                        <legend>Питание:</legend>
+
+                        <ul>
+                            <li class="filter-option filter-radio">
+                                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-type" value="battery" id="filter-battery" checked>
+                                <label for="filter-battery" class="label">Аккумуляторные</label>
+                            </li>
+                            <li class="filter-option filter-radio">
+                                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-type" value="power-supply" id="filter-power-supply">
+                                <label for="filter-power-supply" class="label">Сетевые</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+                </form>
+
+                <a href="" class="filters-button"> Показать</a>
             </aside>
             <div class="pagination">
                 <a href="#" class="current-catalog-page">1</a>
