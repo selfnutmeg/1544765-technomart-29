@@ -147,7 +147,6 @@
     width: 220px;
     height: 47px;
     background-color: var(--pink-red);
-/*    box-sizing: border-box;*/
     box-shadow: inset 0px -5px 0px var(--alpha-black-light);
 }
 
@@ -238,7 +237,6 @@
     color: var(--white);
     font-size: 18px;
     line-height: 42px;
-/*    box-sizing: border-box;*/
 }
 
 .icon-bookmark {
@@ -255,7 +253,6 @@
     color: var(--white);
     font-size: 18px;
     line-height: 42px;
-/*    box-sizing: border-box;*/
 }
 
 .icon-cart {
@@ -270,16 +267,11 @@
     color: var(--alpha-white);
 }
 
-/*.not-empty {
-    background-color: var(--pink-red);
-}  -  Для classList.add  */
-
 .order {
     display: inline-block;
     vertical-align: top;
     width: 150px;
     height: 42px;
-/*    box-sizing: border-box;*/
     color: var(--white);
     background-color: var(--green);
     font-size: 18px;
@@ -324,7 +316,6 @@
     padding-left: 74px;
     line-height: 39px;
     position: relative;
-/*    box-sizing: border-box;*/
     font-weight: bold;
     font-size: 21px;
     margin-bottom: 3px;
@@ -366,7 +357,6 @@
     flex-wrap: wrap;
     width: 300px;
     height: 45px;
-/*    box-sizing: border-box;*/
 }
 
 .checkin,
@@ -381,7 +371,6 @@
     background-color: var(--white);
     font-size: 21px;
     line-height: 45px;
-/*    box-sizing: border-box;*/
 }
 
 .login {
@@ -692,7 +681,6 @@
     height: 104px;
     padding: 23px 24px 16px;
     background-color: var(--alpha-black);
-/*    box-sizing: border-box;*/
 }
 
 .slider-name {
@@ -729,12 +717,10 @@
 
 .slider-right-button {
     right: 20px;
-/*  background-image: url("../img/icon-right.svg");*/
 }
 
 .slider-left-button {
     left: 24px;
-/*  background-image: url("../img/icon-left.svg");*/
 }
 
 .icon-left {
@@ -795,7 +781,6 @@
     border: 2px solid var(--white);
     border-radius: 50%;
     background-color: var(--white);
-/*    box-sizing: border-box;*/
     cursor: pointer;
 }
 
@@ -815,7 +800,6 @@
     margin-bottom: 20px;
     padding: 0 14px 0 28px;
     background-color: var(--beige-gray);
-/*    box-sizing: border-box;*/
 }
 
 .caption {
@@ -848,7 +832,6 @@
     position: relative;
     background: var(--white);
     border: 1px solid var(--lighten-gray);
-/*    box-sizing: border-box;*/
     overflow: hidden;
     object-fit: contain;
 }
@@ -869,14 +852,12 @@
     width: 220px;
     height: 178px;
     position: relative;
-/*    box-sizing: border-box;*/
 }
 
 .card-info-block {
     width: 220px;
     height: 140px;
     text-align: center;
-/*    box-sizing: border-box;*/
 }
 
 .card-image {
@@ -965,7 +946,6 @@
     cursor: pointer;
     background: var(--green);
     box-shadow: inset 0px -3px 0px var(--shadow-green);
-/*    box-sizing: border-box;*/
     border-radius: 2px;
     line-height: 35px;
     text-transform: uppercase;
@@ -993,7 +973,6 @@
     display: inline-block;
     vertical-align: middle;
     border: 3px solid var(--green);
-/*    box-sizing: border-box;*/
     border-radius: 2px;
     text-transform: uppercase;
     color: var(--basic-blue);
@@ -1038,7 +1017,6 @@
     height: 145px;
     background-color: var(--white);
     border: 1px solid var(--lighten-gray);
-/*    box-sizing: border-box;*/
 }
 
 .brand-icon:hover {
@@ -1270,7 +1248,6 @@
     font-size: 18px;
     color: var(--black);
     position: relative;
-/*    box-sizing: border-box;*/
 }
 
 .transport::before {
@@ -1382,7 +1359,6 @@
     height: 38px;
     padding: 10px 0 10px 18px;
     background-color: var(--soft-gray);
-/*    box-sizing: border-box;*/
 }
 
 .sort-wrapper {
@@ -1663,14 +1639,6 @@
     opacity: 0.4;
 }
 
-.filter-input-checkbox:disabled + .filter-checkbox-label::before {
-    background-image: url(../img/checkbox-off-disabled.svg);
-}
-
-.filter-input-checkbox:checked:disabled + .filter-checkbox-label::before {
-    background-image: url(../img/checkbox-on-disabled.svg);
-}
-
 .filter-radio:first-of-type {
     margin-top: 23px;
 }
@@ -1728,7 +1696,6 @@
     line-height: 18px;
     background-color: var(--white);
     border: 1px solid var(--lightest-gray);
-/*    box-sizing: border-box;*/
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -1752,7 +1719,6 @@
     text-transform: uppercase;
     background-color: var(--white);
     border: 1px solid var(--lightest-gray);
-/*    box-sizing: border-box;*/
     border-radius: 2px;
 }
 
@@ -1787,7 +1753,6 @@
     line-height: 18px;
     background-color: var(--white);
     border: 1px solid var(--lightest-gray);
-/*    box-sizing: border-box;*/
     border-radius: 2px;
     text-transform: uppercase;
 }
